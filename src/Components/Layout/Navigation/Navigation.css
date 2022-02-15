@@ -1,0 +1,4 @@
+.custom-navbar{
+    background-color: var(--colorOrther) !important;
+    color: var(--colorText) !important;
+}
