@@ -1,8 +1,10 @@
-.homeCustom {
-    /* height: 100vh; */
-	width: 100vw;
+.home-size {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
 }
 
-.textDiv{
-    
+.home-card-size {
+    width: calc(100vw/2);
+    height: 100vh;
 }

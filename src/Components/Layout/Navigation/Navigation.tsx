@@ -4,7 +4,7 @@ import "./Navigation.css";
 const Navigation = () => {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+			<nav className=" navbar-expand-lg navbar-dark bg-dark custom-navbar">
 				<div className="collapse navbar-collapse">
 					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 						<li className="nav-item">

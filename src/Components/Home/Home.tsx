@@ -9,12 +9,11 @@ const presentationText: string = "Bonjour, je suis Jean-Vivien Sicot développeu
 const Home = () => {
 	const [textWrited, setTextWrited] = useState("");
 	const [textWriteIndex, setTextWriteIndex] = useState(0);
-	const [textLength, setTextLength] = useState(presentationText.length);
 
 	useEffect(() => {
 		let timer = setInterval(() => {
 			setTextWrited(() => {
-				if (textWriteIndex < textLength) {
+				if (textWriteIndex < presentationText.length) {
 					setTextWriteIndex(() => textWriteIndex + 1);
 					return textWrited + presentationText[textWriteIndex]
 				}
@@ -26,18 +25,23 @@ const Home = () => {
 	}, [textWriteIndex]);
 
 	const handleClickFinishedWrite = useCallback(() => {
-		setTextWriteIndex(textLength);
+		setTextWriteIndex(presentationText.length);
 		setTextWrited(presentationText);
 
-	},[])
+	}, [])
 
 	return (
 		<>
-			<div className="d-flex homeCustom">
-				<div className="w-50 "><img src={photoHome} className="img-fluid w-100" alt="" /></div>
-				<div className="w-50 d-flex justify-content-center align-items-center" onClick={handleClickFinishedWrite}>
-					<div className=" w-75 h-25 bg-white text-rigth text-dark border border-4 rounded p-3">
-						<p>{textWrited}</p>
+			<div className="home-size">
+				<div className="home-card-size"><img src={photoHome} className="img-fluid home-card-size" alt="" /></div>
+				<div className="home-card-size d-flex justify-content-center align-items-center"
+					onClick={handleClickFinishedWrite}
+				>
+					<div className="w-75">
+						<div className="h-25 bg-white text-rigth text-dark border border-4 rounded p-3">
+							<p>{textWrited}</p>
+						</div>
+						<button className="btn btn-ligth">Entrer</button>
 					</div>
 				</div>
 			</div>
