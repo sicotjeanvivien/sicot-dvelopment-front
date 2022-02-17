@@ -1,0 +1,7 @@
+.custom-about-title{
+    color: var(--colorTextMajeur);
+}
+
+.custom-about-container{
+    background-color: var(--colorPrimary);
+}

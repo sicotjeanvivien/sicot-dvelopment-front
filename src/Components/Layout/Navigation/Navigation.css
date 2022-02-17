@@ -1,9 +1,12 @@
 .custom-navbar {
-    background-color: var(--colorOrther) !important;
-    color: var(--colorText) !important;
-
+    background-color: var(--colorPrimary) !important;
+    
     overflow: hidden;
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+}
+
+.custom-navbar-item{
+    color: var(--colorTextMajeur) !important;
 }

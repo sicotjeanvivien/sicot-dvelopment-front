@@ -2,7 +2,7 @@
 	--colorPrimary: #48464C;
 	--colorSecondary: #BFBAB5;
 	--colorText: #E7E3DF;
-	--colorOrther: #EC6302;
+	--colorTextMajeur: #EC6302;
 	--font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	--font-family: 'Space Mono', monospace;
     --font-size: 1rem;
@@ -18,7 +18,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: var(--colorOrther);
+	background-color: var(--colorSecondary);
 }
 
 code {

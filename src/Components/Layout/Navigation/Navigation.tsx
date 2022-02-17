@@ -4,25 +4,15 @@ import "./Navigation.css";
 const Navigation = () => {
 	return (
 		<>
-			<nav className=" navbar-expand-lg navbar-dark bg-dark custom-navbar">
-				<div className="collapse navbar-collapse">
-					<ul className="navbar-nav me-auto mb-2 mb-lg-0">
-						<li className="nav-item">
-							<Link to="/" className="nav-link active">Home</Link>
-						</li>
-						<li className="nav-item">
-							<Link to="/about" className="nav-link ">About</Link>
-						</li>
-						<li className="nav-item">
-							<Link to="/projet" className="nav-link ">Projet</Link>
-						</li>
-						<li className="nav-item">
-							<Link to="/blog" className="nav-link ">Blog</Link>
-						</li>
-						<li className="nav-item">
-							<Link to="/Blockchains" className="nav-link ">Blockchains</Link>
-						</li>
-					</ul>
+			<nav className="custom-navbar">
+				<div className="">
+					<div className="d-flex justify-content-center">
+						<Link to="/" className="nav-link link-light custom-navbar-item fs-5">Home</Link>
+						<Link to="/about" className="nav-link link-light custom-navbar-item fs-5">About</Link>
+						<Link to="/projet" className="nav-link link-light custom-navbar-item fs-5">Projet</Link>
+						<Link to="/blog" className="nav-link link-light custom-navbar-item fs-5">Blog</Link>
+						<Link to="/Blockchains" className="nav-link link-light custom-navbar-item fs-5">Blockchains</Link>
+					</div>
 				</div>
 			</nav>
 			<Outlet />
